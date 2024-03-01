@@ -60,7 +60,7 @@ newImage(wellSrc, wellLeft, wellBottom);
 
 
 function newItem(src, left, bottom){
-    newImage(src, left, bottom)
+    newImage(src, left, bottom) //included src, left, and bottom on both functions to be able to declare in the newItem function that I was also calling for the src, left, and bottom parameters in the newImage function.
 }
 
 let swordSrc = 'assets/sword.png';
