@@ -7,24 +7,24 @@
 // document.body.append(greenCharacter)
 // }
 
-let pineTree = document.createElement('img')
-pineTree.src = 'assets/pine-tree.png' //changes
-pineTree.style.position = 'fixed' //stays in body
-pineTree.style.left = '450px' //changes
-pineTree.style.bottom = '200px' //changes
-document.body.append(pineTree) //stays in body (but in the parenthesis has 'character')
-newImage()
+// let pineTree = document.createElement('img')
+// pineTree.src = 'assets/pine-tree.png' //changes
+// pineTree.style.position = 'fixed' //stays in body
+// pineTree.style.left = '450px' //changes
+// pineTree.style.bottom = '200px' //changes
+// document.body.append(pineTree) //stays in body (but in the parenthesis has 'character')
+// newImage()
 
 function newImage(src, left, bottom) {
-    let character = document.createElement('img');
-    character.src = src;
+    let character = document.createElement('img'); //used character as a generic way of adding each new image/character to the function.
+    character.src = src; //made the src = src so that each new character has a parameter that changes
     character.style.position = 'fixed';
-    character.style.left = left;
-    character.style.bottom = bottom;
+    character.style.left = left; //changes
+    character.style.bottom = bottom; //changes
     document.body.append(character);
 }
 
-let greenCharacterSrc = 'assets/green-character.gif';
+let greenCharacterSrc = 'assets/green-character.gif';  //you can see the src, left, and bottom as changing parameters with each new character being added
 let greenCharacterLeft = '100px';
 let greenCharacterBottom = '100px';
 newImage(greenCharacterSrc, greenCharacterLeft, greenCharacterBottom);
