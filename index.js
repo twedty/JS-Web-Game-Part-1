@@ -53,3 +53,31 @@ let wellSrc = 'assets/well.png';
 let wellLeft = '500px';
 let wellBottom = '425px';
 newImage(wellSrc, wellLeft, wellBottom);
+//done with newImage
+//starting newItem
+
+
+
+
+function newItem(src, left, bottom){
+    newImage(src, left, bottom)
+}
+
+let swordSrc = 'assets/sword.png';
+let swordLeft = '500px';
+let swordBottom = '405px';
+newItem(swordSrc, swordLeft, swordBottom)
+
+let shieldSrc = 'assets/shield.png';
+let shieldLeft = '165px';
+let shieldBottom = '185px';
+newItem(shieldSrc, shieldLeft, shieldBottom)
+
+let staffSrc = 'assets/staff.png';
+let staffLeft = '600px';
+let staffBottom = '100px';
+newItem(staffSrc, staffLeft, staffBottom)
+
+sword.addEventListener('dblclick', function(){
+    sword.remove()
+})
