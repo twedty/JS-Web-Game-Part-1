@@ -22,42 +22,17 @@ function newImage(src, left, bottom) {
     character.style.left = left + 'px'; //changes and added px for less repetition later
     character.style.bottom = bottom + 'px'; //changes and ^^
     document.body.append(character);
+    return character;
 }
 
-let greenCharacterSrc = 'assets/green-character.gif';  //you can see the src, left, and bottom as changing parameters with each new character being added
-let greenCharacterLeft = '100';
-let greenCharacterBottom = '100';
-newImage(greenCharacterSrc, greenCharacterLeft, greenCharacterBottom);
-
-let pineTreeSrc = 'assets/pine-tree.png';
-let pineTreeLeft = '450';
-let pineTreeBottom = '200';
-newImage(pineTreeSrc, pineTreeLeft, pineTreeBottom);
-
-let treeSrc = 'assets/tree.png';
-let treeLeft = '200';
-let treeBottom = '300';
-newImage(treeSrc, treeLeft, treeBottom);
-
-let pillarSrc = 'assets/pillar.png';
-let pillarLeft = '350';
-let pillarBottom = '100';
-newImage(pillarSrc, pillarLeft, pillarBottom);
-
-let crateSrc = 'assets/crate.png';
-let crateLeft = '150';
-let crateBottom = '200';
-newImage(crateSrc, crateLeft, crateBottom);
-
-let wellSrc = 'assets/well.png';
-let wellLeft = '500';
-let wellBottom = '425';
-newImage(wellSrc, wellLeft, wellBottom);
+newImage('assets/green-character.gif,', 100, 100) //realized I could put the parameters as items inside of the function
+newImage('assets/pine-tree.png', 450, 200)
+newImage('assets/tree.png', 200, 300)
+newImage('assets/pillar.png', 350, 100)
+newImage('assets/crate.png', 150, 200)
+newImage('assets/well.png', 500, 425)
 //done with newImage
 //starting newItem
-
-
-
 
 function newItem(src, left, bottom){
     let character = newImage(src, left, bottom); //included src, left, and bottom on both functions to be able to declare in the newItem function that I was also calling for the src, left, and bottom parameters in the newImage function.
