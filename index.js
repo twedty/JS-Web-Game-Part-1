@@ -31,6 +31,8 @@ function newItem(src, left, bottom){
         character.remove()
     })
 }
+
+
 newImage('assets/green-character.gif', 100, 100) //realized I could put the parameters as items inside of the function
 newImage('assets/pine-tree.png', 450, 200)
 newImage('assets/tree.png', 200, 300)
@@ -43,3 +45,5 @@ newImage('assets/well.png', 500, 425)
 newItem('assets/sword.png', 500, 405)
 newItem('assets/shield.png', 165, 185)
 newItem('assets/staff.png', 600, 100)
+
+
