@@ -32,8 +32,22 @@ function newItem(src, left, bottom){
     })
 }
 
+function background(url, left, bottom, width, height){//left and bottom sets where it's going to originate from the left and the bottom. ie 100px from the left (to the right) and 100px from the bottom (to the top). width and height determines how high and how wide.
+    for(let h = 0; h < height; h++){
+        for(let w = 0; w < width; w++){
+            newImage(url, left + w*100, bottom + h*100)
+        }
+    }
+}
+//calculates the position and dimensions for the background images
+let sky = window.innerHeight / 1.75
+let heightOfSky = window.innerHeight-sky
+let heightOfGround = sky
 
+background('assets/sky.png', 0, sky, window.innerWidth/100, heightOfSky/100)
+background('assets/grass.png', 0, 0, window.innerWidth/100, heightOfGround/100)
 newImage('assets/green-character.gif', 100, 100) //realized I could put the parameters as items inside of the function
+
 newImage('assets/pine-tree.png', 450, 200)
 newImage('assets/tree.png', 200, 300)
 newImage('assets/pillar.png', 350, 100)
